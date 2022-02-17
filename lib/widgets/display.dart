@@ -33,6 +33,7 @@ class _DisplayState extends State<Display> {
         _currentColor = _currentColorObject.color;
         _currentText = _currentColorObject.text;
         _randomText = colorDB.getRandomObject().text;
+        _resultText = "?";
 
         //create the list of answers and shuffle
         answers.clear();
@@ -123,6 +124,7 @@ class _DisplayState extends State<Display> {
       });
     } else {
       setState(() {
+        _points = 0;
         _resultText = "Wrong!";
       });
     }
