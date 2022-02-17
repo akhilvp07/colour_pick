@@ -14,11 +14,9 @@ class Display extends StatefulWidget {
 
 class _DisplayState extends State<Display> {
   late ColorObject _currentColorObject;
-  Color _currentColor = Colors.red;
+  Color _currentColor = Colors.red; //Holds the correct colour
   Color _randomColor = colorDB.getRandomColor().color;
-  String _currentText = "Red";
-  // Color _next = Colors.green;
-  // Color _prev = Colors.red;
+  String _currentText = "Red"; // Holds the correct colour text
 
   @override
   void initState() {
